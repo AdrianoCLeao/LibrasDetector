@@ -1,1 +1,1 @@
-# Brazillian handsign dettection
+# Brazillian handsign detection

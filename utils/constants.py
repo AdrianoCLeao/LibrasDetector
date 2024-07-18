@@ -7,7 +7,7 @@ FONT_POS = (5,30)
 
 MIN_LENGHT_FRAMES = 5
 LENGHT_KEYPOINTS = 1662
-MODEL_NUMS = [7,12,18]
+MODEL_NUMS = [18,7,7]
 
 ROOT_PATH = os.getcwd()
 FRAME_ACTIONS_PATH = os.path.join(ROOT_PATH, "frame_actions")

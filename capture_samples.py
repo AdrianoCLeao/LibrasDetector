@@ -25,7 +25,7 @@ def capture_sample(path, margin_frame=2, min_cant_frames=5):
             if there_hand(results):
                 count_frame+=1
                 if count_frame > margin_frame:
-                    cv2.putText(image, "Capturando...", FONT_POS, FONT, FONT_SIZE, (255,50,0))
+                    cv2.putText(image, "Capturando.", FONT_POS, FONT, FONT_SIZE, (255,50,0))
                     frames.append(np.asarray(frame))
 
             else:
@@ -38,7 +38,7 @@ def capture_sample(path, margin_frame=2, min_cant_frames=5):
 
                 frames = []
                 count_frame = 0
-                cv2.putText(image, "Pronto para gravar...", FONT_POS, FONT, FONT_SIZE, (0,220,100))
+                cv2.putText(image, "Pronto para gravar.", FONT_POS, FONT, FONT_SIZE, (0,220,100))
             
             draw_keypoints(image, results)
             cv2.imshow(f'Coletando amostras em"{os.path.basename(path)}"', image)

@@ -7,9 +7,9 @@ sys.path.append(root_dir)
 
 from utils.constants import LENGHT_KEYPOINTS
 
-from keras.models import Sequential
-from keras.layers import LSTM, Dense
-from keras.regularizers import l2
+from keras.models import Sequential # type: ignore
+from keras.layers import LSTM, Dense # type: ignore
+from keras.regularizers import l2 # type: ignore
 
 
 def get_model(max_legth_frames, output_lenght: int):
