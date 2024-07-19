@@ -1,4 +1,10 @@
 import os
+import sys
+
+current_dir = os.path.dirname(os.path.abspath(__file__))
+root_dir = os.path.join(current_dir, '..')
+sys.path.append(root_dir)
+
 import cv2
 import numpy as np
 from mediapipe.python.solutions.holistic import Holistic

@@ -4,14 +4,14 @@ import pygame
 from time import sleep
 
 def text_to_speech(text):
-    tts = gTTS(text=text, lang="en")
+    tts = gTTS(text=text, lang='pt', tld='com.br')
     filename = "speech.mp3"
     tts.save(filename)
-
+    
     pygame.init()
     pygame.mixer.init()
     pygame.mixer.music.load(filename)
-    pygame.mixer.music.play
+    pygame.mixer.music.play()
     while pygame.mixer.music.get_busy():
         sleep(1)
 
@@ -23,4 +23,3 @@ def text_to_speech(text):
 if __name__ == "__main__":
     text = "texto"
     text_to_speech(text)
-
