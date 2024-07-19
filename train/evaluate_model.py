@@ -14,7 +14,7 @@ import numpy as np
 from mediapipe.python.solutions.holistic import Holistic
 from keras.models import load_model # type: ignore
 
-def evaluate_model(src=None, threshold=0.6):
+def evaluate_model(src=None, threshold=0.5):
     count_frame = 0
     kp_sequence, sentence = [], []
     word_ids = get_word_ids(KEYPOINTS_PATH)
