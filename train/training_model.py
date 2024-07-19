@@ -29,7 +29,7 @@ def training_model(model_path, model_num:int, epochs=NUM_EPOCHS):
     model.save(model_path)
 
 if __name__ == "__main__":
-    model_num = 7
+    model_num = 18
     model_path = os.path.join(MODELS_FOLDER_PATH, f'actions_{model_num}.keras')
     training_model(model_path, model_num)
 

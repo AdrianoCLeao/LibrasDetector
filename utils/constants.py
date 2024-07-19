@@ -17,4 +17,4 @@ MODELS_FOLDER_PATH = os.path.join(ROOT_PATH, "models")
 MODELS_PATH = [os.path.join(MODELS_FOLDER_PATH, f"actions_{model_num}.keras") for model_num in MODEL_NUMS]
 KEYPOINTS_PATH = os.path.join(DATA_PATH, "keypoints")
 
-NUM_EPOCHS = 10
+NUM_EPOCHS = 5

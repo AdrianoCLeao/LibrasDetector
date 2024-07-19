@@ -15,12 +15,12 @@
   </property>
   <property name="styleSheet">
    <string notr="true">QMainWindow {
-	background-color: #f0f0f0;
+	background-color: #000000;
 }
 
 QLabel {
 	font-size: 24px;
-	color: #333333;
+	color: #000000;
 }</string>
   </property>
   <widget class="QWidget" name="centralwidget">

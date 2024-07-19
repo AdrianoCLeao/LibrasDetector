@@ -70,7 +70,7 @@ class VideoRecorder(QMainWindow):
                 
                 res = model.predict(np.expand_dims(self.kp_sequence, axis=0))[0]
                 
-                if res[np.argmax(res)] > 0.7:
+                if res[np.argmax(res)] > 0.5:
                     print(res[np.argmax(res)])
                     sent = word_ids[np.argmax(res)].replace('_', ' ').split('-')[0].upper()
                     self.sentence.insert(0, sent)
